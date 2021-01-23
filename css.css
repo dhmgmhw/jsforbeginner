@@ -1,0 +1,82 @@
+body {
+    background-color: #ecf0f1;
+    font-family: sans-serif;
+    color: white;
+    text-shadow:1px 1px 5px#2c3e50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+il{
+    margin-bottom: 30px;
+}
+
+button{
+    margin-left:15px ;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
+
+
+input{
+    background-color: transparent;
+    border: white;
+    border-bottom: 2px white;
+    margin-bottom: 20px;
+}
+
+input::placeholder{
+    font-size: 17px;
+    color: white;
+}
+
+.title{
+    margin-top: 7em;
+}
+
+
+.form,
+.greetings {
+    display: none;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+.js-clock{
+    font-size: 100px;
+    font-weight: 800;
+}
+
+
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+.js-weather{
+    position: absolute;
+    top: 55em;
+}
+
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
